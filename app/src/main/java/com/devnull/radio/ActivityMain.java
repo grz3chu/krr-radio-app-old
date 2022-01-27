@@ -16,6 +16,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -147,6 +148,7 @@ public class ActivityMain extends AppCompatActivity implements SearchView.OnQuer
         }
         setTheme(Utils.getThemeResId(this));
         setContentView(R.layout.layout_main);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         try {
             File dir = new File(getFilesDir().getAbsolutePath());
