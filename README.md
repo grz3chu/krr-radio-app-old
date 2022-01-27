@@ -6,7 +6,7 @@
 
 KRR - Katolickie Rozgłośnie Radiowe (Android)
 
-The <b>KRR</b> application uses generally available streams by broadcasters. He is not the sender of the content.
+The KRR application uses the shared streams of broadcasters. Is not the sender of the content.
 
 Contact: grz3chu(at)gmail.com
 
