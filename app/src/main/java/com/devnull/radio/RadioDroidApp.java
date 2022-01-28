@@ -123,7 +123,7 @@ public class RadioDroidApp extends MultiDexApplication {
                 .connectTimeout(10, TimeUnit.SECONDS)
                 .writeTimeout(10, TimeUnit.SECONDS)
                 .readTimeout(10, TimeUnit.SECONDS)
-                .addInterceptor(new UserAgentInterceptor("RadioDroid2/" + BuildConfig.VERSION_NAME));
+                .addInterceptor(new UserAgentInterceptor("KRR/" + BuildConfig.VERSION_NAME));
 
         httpClient = builder.build();
     }
@@ -208,7 +208,7 @@ public class RadioDroidApp extends MultiDexApplication {
         }
 
         OkHttpClient.Builder builder = new OkHttpClient.Builder()
-                .addInterceptor(new UserAgentInterceptor("RadioDroid2/" + BuildConfig.VERSION_NAME))
+                .addInterceptor(new UserAgentInterceptor("KRR/" + BuildConfig.VERSION_NAME))
                 .cache(new Cache(cache, Integer.MAX_VALUE));
 
         if (testsInterceptor != null) {
