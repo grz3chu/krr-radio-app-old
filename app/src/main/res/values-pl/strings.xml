@@ -44,7 +44,7 @@
     <string name="nav_item_alarm">Alarm</string>
     <string name="tab_player_recordings">Nagrania</string>
 
-    <string name="about_text"><b>Aplikacja KRR - Katolickie Rozgłośnie Radiowe</b> korzysta z ogólnie udostępnionych przez nadawców streamów. Nie jest nadawcą treści. \n\nKontakt: \grz3chu@gmail.com\n\nŹródło aplikacji:\nhttps://github.com/grz3chu/krr-radio-app\n\n\n\nTa aplikacja jest wolnym oprogramowaniem na licencji GPLv3.\nhttps://www.gnu.org/licenses/gpl-3.0.html\nW aplikacji wykorzystano kod źródłowy RadioDroid (https://github.com/segler-alex/RadioDroid - autor: segler_alex@web.de).</string>
+    <string name="about_text"><b>Aplikacja KRR - Katolickie Rozgłośnie Radiowe</b> korzysta z ogólnie udostępnionych przez nadawców streamów. Nie jest nadawcą treści. \n\nkontakt: \grz3chu@gmail.com\nwww: https://krr.org.pl\n\nŹródło aplikacji:\nhttps://github.com/grz3chu/krr-radio-app\n\n\n\nTa aplikacja jest wolnym oprogramowaniem na licencji GPLv3.\nhttps://www.gnu.org/licenses/gpl-3.0.html\nW aplikacji wykorzystano kod źródłowy RadioDroid (https://github.com/segler-alex/RadioDroid - autor: segler_alex@web.de).</string>
     <string name="about_version">Wersja: %1$s</string>
     <string name="detail_star">Dodaj do ulubionych</string>
     <string name="detail_unstar">Usuń z ulubionych</string>

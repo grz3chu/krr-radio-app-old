@@ -23,14 +23,14 @@ public class RadioBrowserServerManager {
         Vector<String> listResult = new Vector<String>();
         try {
             // add all round robin servers one by one to select them separately
-            InetAddress[] list = InetAddress.getAllByName("krrapi.devnull.waw.pl");
+            InetAddress[] list = InetAddress.getAllByName("api.krr.org.pl");
             for (InetAddress item : list) {
                 // do not use original variable, it could fall back to "all.api.radio-browser.info"
                 String currentHostAddress = item.getHostAddress();
                 InetAddress new_item = InetAddress.getByName(currentHostAddress);
                 Log.i("DNS", "Found: " + new_item.toString() + " -> " + new_item.getCanonicalHostName());
                 String name = item.getCanonicalHostName();
-                if (!name.equals("krrapi.devnull.waw.pl") && !name.equals(currentHostAddress)) {
+                if (!name.equals("api.krr.org.pl") && !name.equals(currentHostAddress)) {
                     Log.i("DNS", "Added entry: '" + name+"'");
                     listResult.add(name);
                 }

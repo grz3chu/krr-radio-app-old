@@ -478,7 +478,7 @@ public class PlayerService extends JobIntentService implements RadioPlayer.Playe
 
         NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, "RadioDroid2 Player", NotificationManager.IMPORTANCE_LOW);
+            NotificationChannel notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, "KRR Player", NotificationManager.IMPORTANCE_LOW);
 
             // Configure the notification channel.
             notificationChannel.setDescription("Channel description");

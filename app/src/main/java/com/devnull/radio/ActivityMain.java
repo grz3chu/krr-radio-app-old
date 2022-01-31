@@ -91,7 +91,7 @@ public class ActivityMain extends AppCompatActivity implements SearchView.OnQuer
     public static final String ACTION_SHOW_LOADING = "com.devnull.radio.show_loading";
     public static final String ACTION_HIDE_LOADING = "com.devnull.radio.hide_loading";
 
-    private static final String TAG = "RadioDroid";
+    private static final String TAG = "KRR";
 
     private final String TAG_SEARCH_URL = "json/stations/bytagexact";
     private final String SAVE_LAST_MENU_ITEM = "LAST_MENU_ITEM";
