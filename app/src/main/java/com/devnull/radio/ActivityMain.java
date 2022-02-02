@@ -616,6 +616,7 @@ public class ActivityMain extends AppCompatActivity implements SearchView.OnQuer
                 menuItemSleepTimer.setVisible(true);
                 menuItemSearch.setVisible(true);
                 myToolbar.setTitle(R.string.nav_item_stations);
+                myToolbar.setNavigationIcon(R.drawable.logo_radio_krr_menu);
                 break;
             }
             case R.id.nav_item_starred: {
@@ -648,11 +649,14 @@ public class ActivityMain extends AppCompatActivity implements SearchView.OnQuer
                     menuItemDelete.setVisible(true).setTitle(R.string.action_delete_history);
                 }
                 myToolbar.setTitle(R.string.nav_item_history);
+                myToolbar.setNavigationIcon(R.drawable.logo_radio_krr_menu);
+
                 break;
             }
             case R.id.nav_item_alarm: {
                 menuItemAddAlarm.setVisible(true);
                 myToolbar.setTitle(R.string.nav_item_alarm);
+                myToolbar.setNavigationIcon(R.drawable.logo_radio_krr_menu);
                 break;
             }
  /* settings fragment sets the toolbar title depending on the current preference screen
