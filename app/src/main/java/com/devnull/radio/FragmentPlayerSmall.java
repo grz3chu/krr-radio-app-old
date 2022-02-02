@@ -253,7 +253,7 @@ public class FragmentPlayerSmall extends Fragment {
             PlayerServiceUtil.getStationIcon(imageViewIcon, station.IconUrl);
         } else {
             imageViewIcon.setVisibility(View.VISIBLE);
-            imageViewIcon.setImageResource(R.drawable.ic_launcher);
+            imageViewIcon.setImageResource(R.drawable.logo_radio_krr_menu);
         }
 
         if (role == Role.PLAYER) {
