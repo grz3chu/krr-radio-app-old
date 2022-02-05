@@ -50,7 +50,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 30
 
-        versionCode 44
+        versionCode 45
         versionName "3" + "." + getTimestamp()
 
         multiDexEnabled true

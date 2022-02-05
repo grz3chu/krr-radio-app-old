@@ -51,7 +51,7 @@
         android:ellipsize="end"
         android:singleLine="true"
         android:textColor="?attr/colorAccent"
-        android:textSize="12sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/textViewLiveInfo"
         app:layout_constraintEnd_toStartOf="@id/barrierEndButtons"
