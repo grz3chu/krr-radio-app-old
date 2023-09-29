@@ -32,7 +32,6 @@ android {
     flavorDimensions "one"
 
     compileSdkVersion 29
-    buildToolsVersion '29.0.3'
 
     lintOptions {
         abortOnError true
@@ -48,9 +47,9 @@ android {
     defaultConfig {
         applicationId "com.devnull.radio"
         minSdkVersion 16
-        targetSdkVersion 30
+        targetSdkVersion 33
 
-        versionCode 45
+        versionCode 46
         versionName "3" + "." + getTimestamp()
 
         multiDexEnabled true
@@ -119,6 +118,11 @@ android {
             dimension "one"
         }
     }
+    buildFeatures {
+        aidl true
+    }
+    namespace 'com.devnull.radio'
+    testNamespace '${applicationId}.test'
 
     testOptions {
         unitTests.all {
@@ -214,7 +218,7 @@ android.applicationVariants.all { variant ->
     variant.outputs.all { output ->
 
         // get app_name field from defaultConfig
-        def appName = variant.mergedFlavor.resValues.get('app_name_untranslated').getValue()
+        def appName = 'KRR'
         appName = "${appName}"
 
         // concat new App name with each flavor's name

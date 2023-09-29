@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.devnull.radio">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-feature android:name="android.hardware.touchscreen"
         android:required="false" />
@@ -42,6 +41,7 @@
 
         <activity
             android:name="com.devnull.radio.ActivityMain"
+            android:exported="true"
             android:label="@string/app_name"
             android:launchMode="singleTop">
             <intent-filter>
@@ -58,6 +58,7 @@
         </activity>
         <service
             android:name="com.devnull.radio.service.PlayerService"
+            android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
@@ -75,13 +76,15 @@
 
         <receiver
             android:name="com.devnull.radio.alarm.AlarmReceiver"
-            android:enabled="true">
+            android:enabled="true"
+            android:exported="false">
             <intent-filter>
                 <action android:name=".AlarmReceiver" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name="androidx.media.session.MediaButtonReceiver">
+        <receiver android:name="androidx.media.session.MediaButtonReceiver"
+            android:exported="false" >
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
@@ -89,6 +92,7 @@
 
         <receiver
             android:name="com.devnull.radio.BootReceiver"
+            android:exported="false"
             android:enabled="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />

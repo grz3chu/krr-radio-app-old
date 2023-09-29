@@ -23,14 +23,14 @@ public class RadioBrowserServerManager {
         Vector<String> listResult = new Vector<String>();
         try {
             // add all round robin servers one by one to select them separately
-            InetAddress[] list = InetAddress.getAllByName("api.krr.org.pl");
+            InetAddress[] list = InetAddress.getAllByName("apiv2.krr.org.pl");
             for (InetAddress item : list) {
                 // do not use original variable, it could fall back to "all.api.radio-browser.info"
                 String currentHostAddress = item.getHostAddress();
                 InetAddress new_item = InetAddress.getByName(currentHostAddress);
                 Log.i("DNS", "Found: " + new_item.toString() + " -> " + new_item.getCanonicalHostName());
                 String name = item.getCanonicalHostName();
-                if (!name.equals("api.krr.org.pl") && !name.equals(currentHostAddress)) {
+                if (!name.equals("apiv2.krr.org.pl") && !name.equals(currentHostAddress)) {
                     Log.i("DNS", "Added entry: '" + name+"'");
                     listResult.add(name);
                 }
@@ -40,8 +40,8 @@ public class RadioBrowserServerManager {
         }
         if (listResult.size() == 0){
             // should we inform people that their internet provider is not able to do reverse lookups? (= is shit)
-            Log.w("DNS", "Fallback to de1.api.radio-browser.info because dns call did not work.");
-            listResult.add("ns3060009.ip-188-165-217.eu");
+            Log.w("DNS", "Go to api V2");
+            listResult.add("apiv2.krr.org.pl");
         }
         Log.d("DNS", "doDnsServerListing() Found servers: " + listResult.size());
         return listResult.toArray(new String[0]);
